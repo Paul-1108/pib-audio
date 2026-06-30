@@ -71,13 +71,13 @@ class DoorbellTaskManagerDemo(Node):
         if result.detected:
             self.get_logger().info(
                 f"\033[1;92m"
-                f"✓ DOORBELL DETECTED (confidence={result.confidence:.3f})"
+                f"DOORBELL DETECTED (confidence={result.confidence:.3f})"
                 f"\033[0m"
             )
         else:
             self.get_logger().info(
                 f"\033[1;91m"
-                f"✗ NO DOORBELL DETECTED (confidence={result.confidence:.3f})"
+                f"NO DOORBELL DETECTED (confidence={result.confidence:.3f})"
                 f"\033[0m"
             )
 
